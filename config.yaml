@@ -1,0 +1,49 @@
+baseURL: "https://justnewbies.com/"
+theme:
+- just-newbies
+- reveal-hugo
+pygmentsUseClasses: true
+outputFormats:
+  Reveal:
+    baseName: index
+    mediaType: text/html
+    isHTML: true
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+outputs:
+  home:
+  - HTML
+  - SearchIndex
+markup:
+  goldmark:
+    footnote: false  # katex conflict
+    renderer:
+      unsafe: true
+defaultContentLanguage: en
+sectionPagesMenu: main
+languages:
+  en:
+    title: Just Newbies
+    baseURL: https://en.justnewbies.com
+    contentDir: content/english
+    languageName: English
+    languageCode: "en-us"
+    weight: 1
+  ar:
+    title: Just Newbies
+    baseURL: https://ar.justnewbies.com
+    contentDir: content/arabic
+    languageName: العربية
+    languageCode: "ar"
+    weight: 2
+params:
+  repo: "https://github.com/just-osg/Just-Newbies"
+  reveal_hugo:
+    #theme: white
+    slide_number: true
+    transition: none
+    custom_theme: "slides.sass"
+    custom_theme_compile: true

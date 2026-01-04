@@ -1,0 +1,49 @@
+<nav id='sidebar' {{ if .Params.HideSidebar }}class='sidebar-hidden sidebar-toggled'{{end}}>
+  {{ $currentPage := . }}
+  {{ $currentDivision := . }}
+  <div class='title'>
+    <a href='/'>{{ .Site.Title }}</a>
+    {{ range .Site.Menus.main }}
+      {{ if $currentPage.HasMenuCurrent "main" . }}
+        {{ $currentDivision = . }}
+        <span class='slash'>/</span>
+        <a href='{{.Page.RelPermalink}}' class='divisionAbbr'
+           {{ if eq $currentPage .Page }}id='active-element'{{ end }}>
+          {{ .Page.Params.MenuTitle }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+  <ul>
+    {{ if .IsHome }}
+      {{ range .Pages }}
+        {{ if not .Params.excludeFromSidebar }}
+        <li class='ignore-indexing'><a href='{{ .RelPermalink }}'>{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+      {{ range $currentDivision.Page.Pages }}
+        {{ if isset .Params "part" }}
+          <li class='part'>{{.Params.Part}}</li>
+        {{ end }}
+        <li class='{{ if .Draft }}draft{{end}} {{ if .Params.IgnoreIndexing }}ignore-indexing{{end}}'><a href='{{ .RelPermalink }}'
+          {{ if eq $currentPage . }}id='active-element'{{ end }}
+          >{{ .Title }}</a></li>
+        {{ if .IsSection }}
+          <ol>
+            {{ range .Pages }}
+              <li {{ if .Draft }}class='draft'{{end}}><a href='{{ .RelPermalink }}'
+                {{ if eq $currentPage . }}id='active-element'{{ end }}
+                >{{ .Title }}</a></li>
+            {{ end }}
+          </ol>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </ul>
+  {{ if .IsHome }}
+  <div style='padding: 1em; margin-top: auto; font-size: 0.8em;'>
+    <a href='/about/'>About</a>
+  </div>
+  {{ end }}
+</nav>

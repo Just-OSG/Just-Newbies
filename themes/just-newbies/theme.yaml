@@ -1,0 +1,11 @@
+name: "Just Newbies"
+license: "MIT"
+licenselink: "https://github.com/just-osg/Just-Newbies/blob/master/LICENSE"
+description: "Custom theme for Just Newbies educational platform"
+homepage: "https://github.com/just-osg/Just-Newbies"
+tags: []
+features: []
+min_version: "0.41"
+author:
+  name: "Just Newbies Team"
+  homepage: "https://justnewbies.com/"
