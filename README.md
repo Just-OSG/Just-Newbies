@@ -9,7 +9,7 @@ what if you found a lot of resources for that topic but they were saying some te
 that you don't yet understand! What if you kept moving back and forth between different
 resources wishing to find the ultimiate perfect resources?
 
-In the IT sector you connot be an expert in everything but you defintly should
+In the IT sector you connot be an expert in everything but you definitely should
 be aware of a lot of concepts. Here's where Just Newbies shine, you'll only encounter a conversation style of writing within everything written here, 
 you'll learn only the 20% of every topic, the 20% that will cover the other 80% 
 according to the 20/80 rule (80% of effects come from 20% of causes).
