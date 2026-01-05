@@ -25,4 +25,4 @@ You don't have to be a 1st year student, being passionate about technology is mo
 ---
 
 **Got questions or ideas?** We'd love to hear them! Feel free to open an issue or get in touch.
-**Want to help?** Check out our contribution guidelines. Please let us know you're working on an issue by commenting on it first, this helps us avoid double work!
+**Want to help?** Check out our  [contribution guidelines](CONTRIBUTING.md). Please let us know you're working on an issue by commenting on it first, this helps us avoid double work!
