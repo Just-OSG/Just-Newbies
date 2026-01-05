@@ -21,7 +21,7 @@ We value every contributor and believe in giving credit where credit is due.
 human-written explanations that come from your genuine understanding and teaching experience. 
 This personal touch is what resonates with learners and creates real educational value.
 
-### Where to find the content files?
+#### Where to find the content files?
 
 Just-Newbies uses the Hugo framework, where you write and modify your content only in `.md` files.  
 You can modify or create new files inside the [`content/english`](https://github.com/Just-OSG/Just-Newbies/tree/main/content/english) folder for the English version and the [`content/arabic`](https://github.com/Just-OSG/Just-Newbies/tree/main/content/arabic) folder for arabic written content.  
@@ -38,7 +38,6 @@ Technical contributions include bug fixes, feature implementations, website impr
 Before you start working on any issue, you must comment under the issue you want to work on to state that you are taking it.
 This helps confirm that your contribution is valid, prevents duplicated work, and keeps the workflow clear and organized.
 
-
-## Questions?
+---
 
 If you have any questions about contributing, feel free to open an issue or [reach out](mailto:justosgroup@gmail.com) to the maintainers.
