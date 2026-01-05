@@ -22,6 +22,8 @@ From software to hardware, even the tools that you'll use in your career!
 
 You don't have to be a 1st year student, being passionate about technology is more than enough!
 
+This project was inspired by Algorithmica and uses their open-source Hugo theme (MIT License). Original theme created by Sergey Slotin.
+
 ---
 
 **Got questions or ideas?** We'd love to hear them! Feel free to open an issue or get in touch.
