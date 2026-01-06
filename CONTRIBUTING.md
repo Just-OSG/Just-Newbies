@@ -46,6 +46,17 @@ Before you start contributing to the project, make sure you have the following i
 - **Hugo Extended**: Version 0.112.0 or higher (the extended version is required for SCSS/SASS processing)
 - **A text editor**: VS Code, Sublime Text, or any editor of your choice
 
+ **Installing [Hugo Extended](https://gohugo.io/installation/)**:
+   - **Windows**: Use `winget install Hugo.Hugo.Extended` (winget is pre-installed on Windows 10/11)
+   - **macOS**: Use Homebrew: `brew install hugo`
+   - **Linux**: Use your package manager or download from [Hugo Releases](https://github.com/gohugoio/hugo/releases)
+
+**Then Verify Hugo installation**:
+   ```bash
+   hugo version
+   ```
+   Make sure it says "extended" in the output.
+
 ### **What is Hugo?**
 
 Hugo is a fast and flexible static site generator written in Go. Unlike traditional content management systems (CMS), Hugo generates static HTML files from your content (written in Markdown) and templates. This makes the website incredibly fast, secure, and easy to deploy. Hugo uses a simple folder structure where you write content in Markdown files, and it automatically generates the corresponding HTML pages.
@@ -60,18 +71,7 @@ Follow these steps to get the project running on your local machine:
    cd Just-Newbies
    ```
 
-2. **Install [Hugo Extended](https://gohugo.io/installation/)**:
-   - **Windows**: Use `winget install Hugo.Hugo.Extended` (winget is pre-installed on Windows 10/11)
-   - **macOS**: Use Homebrew: `brew install hugo`
-   - **Linux**: Use your package manager or download from [Hugo Releases](https://github.com/gohugoio/hugo/releases)
-
-3. **Verify Hugo installation**:
-   ```bash
-   hugo version
-   ```
-   Make sure it says "extended" in the output.
-
-4. **Run the development server**:
+2. **Run the development server**:
    ```bash
    hugo server
    ```
@@ -81,7 +81,7 @@ Since the project supports multiple languages, you can access:
    
    Hugo will automatically reload the page when you make changes to the content or theme files.
 
-5. **Run with drafts** (if you want to preview draft content):
+3. **Run with drafts** (if you want to preview draft content):
    ```bash
    hugo server -D
    ```
